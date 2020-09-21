@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Nunito+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
    box-sizing: border-box;
 }
@@ -75,19 +79,21 @@ nav a {
  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
+    text-align: center;
  }
 
  .jumbotron {
     font-size: 25px;
     padding: 60px;
+    padding-top: 10px;
     background-color: #00c8eb;
-    text-align: right;
     color: white;
-    background-image: url('../image/poto1.png');
+    background-image: url('../image/cover.png');
     background-size: cover;
-    height: 550px;
+    background-repeat: no-repeat;
+    height: 400px;
  }
 
  nav {
@@ -126,35 +132,94 @@ nav a {
    text-align: left;
  }
 
- .column1 {
-   float: left;
-   width: 33%;
-   padding: 10px;
+.kiri{
+   width: 40%;
 }
 
- .column2 {
-   float: left;
-   width: 33%;
-   padding: 10px;
+.kanan{
+   width: 60%;
+}
+ .flex-content {
+   display: flex;
+   margin: 10px;
+   align-content: center;
  }
 
- .column3 {
+ .column {
    float: left;
-   width: 33%;
+   width: 28%;
    padding: 10px;
+   margin: 10px;
+}
+
+ .judul {
+   line-height: 5px;
  }
- 
- .nama{
-    margin-top: 25%;
+
+ .flex-content > section {
+   margin-left: 10px;
+   margin-right: 10px;
  }
+
+ .flex-content-card {
+   display: flex;
+   margin: 10px;
+   align-content: center;
+ }
+
+ .flex-content-card > section {
+   margin-left: 10px;
+   margin-right: 10px;
+   width: 25%;
+   height: 250px;
+ }
+
+ .tombol{
+   background:#2C97DF;
+   color:white;
+   border-top:0;
+   border-left:0;
+   border-right:5px solid #2A80B9;;
+   border-bottom:5px solid #2A80B9;
+   padding:10px 20px;
+   text-decoration:none;
+   font-family:'Quicksand', sans-serif;
+   font-size:11pt;
+ }
+
+ .image-card {
+   width: 75%;
+   max-height: 75%;
+   object-fit: fill;
+   object-position: center;
+}
 
  /* Clear floats after the columns */
  
  
  /* On screens that are 992px wide or less, go from four columns to two columns */
  @media screen and (max-width: 1000px) {
-   .column1, .column2, .column3 {
+   .column {
      width: 100%;
    }
+   .flex-container {
+      display: block;
+   }
+   .flex-container > div {
+      width: 100%;
+      margin: 0px;
+      text-align: left;
+    }
+    .flex-content, .flex-content-card {
+      display: block;
+      margin: 0;
+    }
+    .flex-content > section, .flex-content-card > section {
+      width: 100%;
+      margin: 0px;
+    }
+    .poto{
+      margin-left: 25%;
+    }
  }
  
