@@ -58,8 +58,8 @@ nav a {
  }
 
  .featured-image {
-    width: 100%;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     object-fit: cover;
     object-position: center;
  }
@@ -133,7 +133,7 @@ nav a {
  }
 
 .kiri{
-   width: 40%;
+   width: 50%;
 }
 
 .kanan{
