@@ -18,41 +18,41 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f6f6f6;
  }
  
  
-h2, h3 {
-   color: #00a2c6
+h2 {
+   color: #ff2e63
+}
+
+h3 {
+   color: #08d9d6;
 }
 
 header {
     display: inline;
  }
- 
-footer {
-   padding: 20px;
+
+button a {
+   text-decoration: none;
    color: white;
-   background-color: #00a2c6
 }
-
-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
- }
-
- nav a:hover {
-    font-weight: bold;
- }
 
  .profile header {
     text-align: center;
  }
 
+ .profile {
+    display: flex;
+    text-align: left;
+    margin-left: 25%;
+ }
+
  footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
+    background-color: #1a1c20;
     text-align: center;
     font-weight: bold;
  }
@@ -78,17 +78,18 @@ nav a {
 
  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
     text-align: center;
+    background-color: white;
  }
 
  .jumbotron {
     font-size: 25px;
-    padding: 60px;
+    padding: 40px;
     padding-top: 10px;
-    background-color: #00c8eb;
+    background-color: #08d9d6;
     color: white;
     background-image: url('../image/cover.png');
     background-size: cover;
@@ -97,7 +98,7 @@ nav a {
  }
 
  nav {
-    background-color: #00a2c6;
+    background-color: #252a34;
     padding: 5px;
     position: sticky;
     top: 0;
@@ -115,6 +116,10 @@ nav a {
     list-style-type: none;
     margin-right: 20px;
  }
+
+ nav a:hover {
+   font-weight: bold;
+}
 
  main {
     padding: 20px;
@@ -141,7 +146,6 @@ nav a {
 }
  .flex-content {
    display: flex;
-   margin: 10px;
    align-content: center;
  }
 
@@ -171,30 +175,99 @@ nav a {
    margin-left: 10px;
    margin-right: 10px;
    width: 25%;
+   height: 220px;
+ }
+
+ .flex-content-produk {
+   display: flex;
+   align-content: center;
+   background-color: white;
+   padding: 20px 30px;
+   margin-left: -20px;
+   margin-right: -20px;
+ }
+
+ .flex-content-produk > section {
+   margin-left: 10px;
+   margin-right: 10px;
+   width: 25%;
    height: 250px;
+   line-height: 5px;
  }
 
  .tombol{
    background:#2C97DF;
-   color:white;
    border-top:0;
    border-left:0;
    border-right:5px solid #2A80B9;;
    border-bottom:5px solid #2A80B9;
    padding:10px 20px;
-   text-decoration:none;
    font-family:'Quicksand', sans-serif;
    font-size:11pt;
+   border-radius: 20px;
+   cursor: pointer;
  }
 
+ .tombol:hover {background-color: #08d9d6}
+
+.tombol:active {
+   border-right:2px solid #2A80B9;
+   border-bottom:2px solid #2A80B9;
+   transform: translateY(4px);
+}
+
  .image-card {
-   width: 75%;
-   max-height: 75%;
-   object-fit: fill;
+   max-width: 100%;
+   max-height: 150px;
+   object-fit: cover;
    object-position: center;
 }
 
- /* Clear floats after the columns */
+.image-produk {
+   max-width: 100%;
+   max-height: 125px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.image-profil {
+   max-width: 100%;
+   max-height: 150px;
+   object-fit: contain;
+   object-position: center;
+}
+
+#deskripsi {
+   background-color: white;
+   padding: 20px 30px;
+   margin-left: -20px;
+   margin-right: -20px;
+}
+
+#fitur {
+   padding: 20px;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+#produk {
+   text-align: center;
+   background-color: white;
+   padding: 20px 30px;
+   margin-left: -20px;
+   margin-right: -20px;
+   margin-bottom: 0;
+}
+
+ aside {
+    padding: 10px;
+    background-color: #252a34;
+    color: white;
+ }
+
+ aside h2 {
+   text-align: center;
+ }
  
  
  /* On screens that are 992px wide or less, go from four columns to two columns */
@@ -210,11 +283,11 @@ nav a {
       margin: 0px;
       text-align: left;
     }
-    .flex-content, .flex-content-card {
+    .flex-content, .flex-content-card, .flex-content-produk, .profile {
       display: block;
       margin: 0;
     }
-    .flex-content > section, .flex-content-card > section {
+    .flex-content > section, .flex-content-card > section, .flex-content-produk > section {
       width: 100%;
       margin: 0px;
     }
