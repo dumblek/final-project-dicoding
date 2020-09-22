@@ -8,12 +8,15 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#">Berada</a></li>
-                    <li><a href="#tentang">Tentang Ratapan</a></li>
-                    <li><a href="#fitur">Fitur</a></li>
-                    <li><a href="#produk">Produk</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                <ul class="dropdown">
+                    <div class="dropdown-content">
+                        <li><a href="#">Berada</a></li>
+                        <li><a href="#tentang">Tentang Ratapan</a></li>
+                        <li><a href="#fitur">Fitur</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </div>
+                    <li><a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dropdown</a></li>
                 </ul>
             </nav>
             <div class="jumbotron">
@@ -177,6 +180,17 @@
         </aside>
         <footer>
             <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
-        </footer>    
+        </footer>
+        <script>
+            function myFunction() {
+              // Code for IE9
+              document.getElementById("dropdown-content").style.msTransform = "rotate(20deg)"; 
+              // Standard syntax
+              document.getElementById("myDIV").style.transform = "rotate(20deg)"; 
+            }
+            function nyala() {
+                document.getElementById("card").style.transition = "all 2s";
+            }
+            </script>    
     </body>
 </html>
