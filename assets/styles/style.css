@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Nunito+Sans:wght@300&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
    box-sizing: border-box;
 }
@@ -159,13 +160,6 @@ button a {
    align-content: center;
  }
 
- .column {
-   float: left;
-   width: 28%;
-   padding: 10px;
-   margin: 10px;
-}
-
  .judul {
    line-height: 5px;
  }
@@ -256,6 +250,7 @@ button a {
    max-height: 150px;
    object-fit: contain;
    object-position: center;
+   cursor: pointer;
 }
 
 #deskripsi {
@@ -289,7 +284,10 @@ button a {
  aside h2 {
    text-align: center;
  }
- 
+
+ #check{
+   display: none;
+}
  
  /* On screens that are 992px wide or less, go from four columns to two columns */
  @media screen and (max-width: 1000px) {
@@ -336,12 +334,11 @@ button a {
     }
 
     .dropdown-content {
-      display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      left: -300px;
+      background-color: #252a34;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+      transition: .3s;
     }
 
     .dropbtn{
@@ -349,17 +346,23 @@ button a {
     }
     
     .dropdown-content a {
-      color: black;
+      color: white;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
       text-align: left;
     }
     
-    .dropdown-content a:hover {background-color: #f1f1f1;}
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
+    .dropdown-content a:hover {background-color: #ff2e63;}
+   
+    #check:checked ~ .dropdown-content {
+      position: relative;
+      left: 0px;
+      list-style-type: none;
+    }
+
+    .dropdown {
+       margin-left: 0;
     }
  }
  

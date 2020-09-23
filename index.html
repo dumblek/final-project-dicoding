@@ -3,12 +3,15 @@
     <head>
         <title>Ratapan</title>
         <link rel="stylesheet" href="assets/styles/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <nav>
                 <ul class="dropdown">
+                    <input type="checkbox" id="check">
+                    <li><label for="check" class="dropbtn"><i class="fas fa-bars fa-2x" style="color:whitesmoke"></i></label></li>
                     <div class="dropdown-content">
                         <li><a href="#">Berada</a></li>
                         <li><a href="#tentang">Tentang Ratapan</a></li>
@@ -16,7 +19,6 @@
                         <li><a href="#produk">Produk</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </div>
-                    <li><a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dropdown</a></li>
                 </ul>
             </nav>
             <div class="jumbotron">
@@ -54,19 +56,19 @@
                 </div>
                 <div class="flex-content-card">
                     <section class="card"> 
-                        <img src="assets/image/aman.png" class="image-card" alt="farm house">
+                        <img src="assets/image/aman.png" class="image-card" alt="aman">
                         <h3>Transaksi 100% Aman</h3>
                     </section>
                     <section class="card">     
-                        <img src="assets/image/garansi.png" class="image-card" alt="bosscha">
+                        <img src="assets/image/garansi.png" class="image-card" alt="garansi">
                         <h3>Garansi 7 Hari</h3>
                     </section>
                     <section class="card"> 
-                        <img src="assets/image/product.png" class="image-card" alt="farm house">
+                        <img src="assets/image/product.png" class="image-card" alt="product">
                         <h3>10.000+ Produk Digital</h3>
                     </section>
                     <section class="card"> 
-                        <img src="assets/image/member.png" class="image-card" alt="farm house">
+                        <img src="assets/image/member.png" class="image-card" alt="member">
                         <h3>100.000 Member dan Afiliate</h3>
                     </section>
                 </div>
@@ -79,12 +81,12 @@
                                 <p>Kamu punya produk digital, bingung mau jual dimana. Tidak ada tempat untuk promosi produk digital kamu. Ratapan solusi yang tepat untuk permasalahan kamu</p>
                             </div>
                             <div>     
-                                <img src="assets/image/produk.png" class="featured-image" alt="bosscha">
+                                <img src="assets/image/produk.png" class="featured-image" alt="produk">
                             </div>
                         </div>
                         <div class="flex-container">
                             <div>     
-                                <img src="assets/image/jasa.png" class="featured-image" alt="bosscha">
+                                <img src="assets/image/jasa.png" class="featured-image" alt="jasa">
                             </div>
                             <div>
                                 <h3>Menjual Jasa Digital</h3>
@@ -99,12 +101,12 @@
                                 <p>Kamu pengen jual produk digital tapi nggak punya produk sendiri, tenang di Ratapan kamu bisa menjadi seorang afiliate dengan cara memasarkan produk digital yang ada di ratakan untuk mendapatkan komisi dari hasil penjualanmu</p>
                             </div>
                             <div>     
-                                <img src="assets/image/afiliate.png" class="featured-image" alt="bosscha">
+                                <img src="assets/image/afiliate.png" class="featured-image" alt="afiliate">
                             </div>
                         </div>
                         <div class="flex-container">
                             <div>     
-                                <img src="assets/image/tiket.png" class="featured-image" alt="bosscha">
+                                <img src="assets/image/tiket.png" class="featured-image" alt="tiket">
                             </div>
                             <div>
                                 <h3>Menjual Tiket Event</h3>
@@ -116,28 +118,28 @@
                 <h2 id="produk">PRODUK</h2>
                 <div class="flex-content-produk">
                     <section class="card"> 
-                        <img src="assets/image/wasap.jpg" class="image-produk" alt="farm house">
+                        <img src="assets/image/wasap.jpg" class="image-produk" alt="wasap">
                         <h3>Jago Kirim WA</h3>
                         <p>Tools WA Marketing Terlaris</p>
                         <p>Mudah, Aman, dan Murah!!</p>
                         <p><b>Rp. 230.000</b></p>
                     </section>
                     <section class="card">     
-                        <img src="assets/image/mudah.png" class="image-produk" alt="bosscha">
+                        <img src="assets/image/mudah.png" class="image-produk" alt="mudah">
                         <h3>Mudah Desain</h3>
                         <p>1000+ Template Desain</p>
                         <p>Mudah, Lengkap, dan Murah!!</p>
                         <p><b>Rp. 79.000</b></p>
                     </section>
                     <section class="card"> 
-                        <img src="assets/image/mockup.png" class="image-produk" alt="farm house">
+                        <img src="assets/image/mockup.png" class="image-produk" alt="mockup">
                         <h3>Live Mock Up Video App</h3>
                         <p>Buat, Rekam & Animasikan Mockup</p>
                         <p>Video Anda dengan Mudah!</p>
                         <p><b>Rp. 55.000</b></p>
                     </section>
                     <section class="card"> 
-                        <img src="assets/image/cloud.png" class="image-produk" alt="farm house">
+                        <img src="assets/image/cloud.png" class="image-produk" alt="cloud">
                         <h3>Cloud Software Video Cerdas</h3>
                         <p>Cloudcreate dan Link Video</p>
                         <p>Hanya sekali bayar, Life Time Akses!</p>
@@ -179,18 +181,8 @@
             </article>
         </aside>
         <footer>
-            <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+            <p>&#169; Ratapan - Belajar Dasar Pemrograman Web 2020, Dicoding Academy</p>
         </footer>
-        <script>
-            function myFunction() {
-              // Code for IE9
-              document.getElementById("dropdown-content").style.msTransform = "rotate(20deg)"; 
-              // Standard syntax
-              document.getElementById("myDIV").style.transform = "rotate(20deg)"; 
-            }
-            function nyala() {
-                document.getElementById("card").style.transition = "all 2s";
-            }
-            </script>    
+        <script src="assets/javascript/script.js"></script>  
     </body>
 </html>
